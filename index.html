@@ -138,18 +138,42 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle Crd -->
-                <!-- <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                <!-- Rhombus Card -->
+                <div class="card w-auto bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+                        <div>
+                            <input id="rhombusd1" type="text" placeholder="d1" class="w-24 text-2xl p-2 rounded-sm">>
+                            <span class="mr-4 ml-2">
+                                cm
+                            </span>
+                            <input type="text" placeholder="d2" class="w-24 text-2xl p-2 rounded-sm" id="rhombusd2">
+                            <span class="mr-4 ml-2">
+                                cm
+                            </span>
+                        </div>
+
+                        <p class="text-2xl">
+                            Area :
+                            <span>
+
+                            </span>
+                            <span>
+                                cm
+                                <sup>
+                                    2
+                                </sup>
+                            </span>
+                        </p>
+
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full" onclick="calculateRhombusArea()">Calculate</button>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <!-- Triangle Crd -->
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -187,6 +211,7 @@
     <script src="triangle-calculate.js"></script>
     <script src="rectangle.js"></script>
     <script src="p-area.js"></script>
+    <script src="rhombus.js"></script>
 </body>
 
 </html>
