@@ -23,7 +23,7 @@
         <!-- main content container -->
         <div class="flex  flex-col md:flex-row space-x-3">
             <!-- shape card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-5">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-5 space-y-5">
                 <!-- Triangle Crd -->
                 <div class="card w-auto bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" /></figure>
@@ -121,7 +121,7 @@
                         </div>
 
                         <p class="text-2xl">
-                            Area: 
+                            Area:
                             <span id="para-area">
 
                             </span>
@@ -134,7 +134,8 @@
                         </p>
 
                         <div class="card-actions justify-end">
-                            <button id="para-btn" onclick="calculateParaArea ()" class="btn btn-primary w-full">Calculate</button>
+                            <button id="para-btn" onclick="calculateParaArea ()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -174,19 +175,20 @@
                         </div>
                     </div>
                 </div>
-                 <!-- Pentagon card -->
-                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/pentagon.png"
-                            alt="Shoes" /></figure>
+                <!-- Pentagon card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Pentagon!</h2>
                         <p>Area = 0.5 * p * b</p>
                         <div class="flex gap-5">
-                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="Peri">
-                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apo">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter"
+                                placeholder="Peri">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem"
+                                placeholder="apo">
                         </div>
                         <div>
-                            <p>Area: 
+                            <p>Area:
                                 <span id="pentagon-area">
                                     0
 
@@ -204,36 +206,43 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle Crd -->
-                <!-- <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                <!-- Ellipse card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Ellipse!</h2>
+                        <p>Area = π * a * b</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius"
+                                placeholder="major">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius"
+                                placeholder="minor">
+                        </div>
+                        <div>
+                            <p>Area:
+                                <span id="ellipse-area">
+                                    0
+                                </span>
+                                <span>
+                                    cm
+                                    <sup>
+                                        2
+                                    </sup>
+                                </span>
+                            </p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
-                </div> -->
-                <!-- Triangle Crd -->
-                <!-- <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
             <!-- Area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculation</h3>
             </div>
         </div>
+
     </main>
     <footer>
 
@@ -243,6 +252,7 @@
     <script src="p-area.js"></script>
     <script src="rhombus.js"></script>
     <script src="pentagon.js"></script>
+    <script src="ellipes.js"></script>
 </body>
 
 </html>
