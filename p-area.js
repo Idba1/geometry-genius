@@ -10,4 +10,11 @@ function calculateParaArea (){
     const parallogramHeightInput = document.getElementById('para-height');
     const parallogramHeightInputValue = parseFloat(parallogramHeightInput.value);
     console.log(parallogramHeightInputValue);
+
+
+    const area = parallogramBaseInputValue * parallogramHeightInputValue;
+    console.log(area);
+
+    const paraAreaValue = document.getElementById('para-area');
+    paraAreaValue.innerText = area;
 }
