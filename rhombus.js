@@ -7,6 +7,11 @@ function calculateRhombusArea(){
 
     const height = getInputValueById('rhombusd2');
     console.log('height value', height);
+
+    const area = base * height;
+    console.log('Area of the Rhombus:', area);
+
+    setInnerTextById ('rhombus-area', area);
 }
 
 function getInputValueById(inputFieldId){
@@ -15,4 +20,10 @@ function getInputValueById(inputFieldId){
     const inputValue = parseFloat(inputValueText);
     // console.log(inputValue)
     return inputValue;
+}
+
+
+function setInnerTextById (elementId , area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
 }
