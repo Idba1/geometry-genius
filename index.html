@@ -21,15 +21,15 @@
     </header>
     <main>
         <!-- main content container -->
-        <div class="flex  flex-col md:flex-row">
+        <div class="flex  flex-col md:flex-row space-x-3">
             <!-- shape card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-5">
                 <!-- Triangle Crd -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-auto bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p class="text-center text-3xl">Area(A) = 0.5 x b x h</p>
+                        <p class="text-center  text-2xl md:text-2xl lg:text-3xl">Area(A) = 0.5 x b x h</p>
 
                         <div>
                             <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
@@ -61,6 +61,38 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rectangle Card -->
+                <div>
+                    <div class="card w-auto bg-base-100 shadow-xl">
+                        <figure><img src="images/rectangle.png"></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Rectangle</h2>
+                          <p class="text-center  text-2xl md:text-2xl lg:text-3xl">Area (A) = w x i</p>
+
+                          <div>
+                            <input type="text" placeholder="w" class="w-24 text-2xl p-2 rounded-sm">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input type="text" placeholder="i" class="w-24 text-2xl p-2 rounded-sm">
+                            <span class="mr-4 ml-2">cm</span>
+                          </div>
+
+                          <div class="card-actions justify-end">
+                            <button onclick="calculateRectangleArea ()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- card -->
+                <div class="card card-compact w-auto bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
                 <!-- Triangle Crd -->
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -108,6 +140,7 @@
 
     </footer>
     <script src="triangle-calculate.js"></script>
+    <script src="rectangle.js"></script>
 </body>
 
 </html>
